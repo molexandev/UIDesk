@@ -1,34 +1,48 @@
-$default: #1B3764;
-$hover: #4d7ecc;
-$accent: #FFCA42;
-$text-color: #B4C7E7;
-$textwhite: #F6F8FC;
-$textgray: #969AA0;
+// $default: #1B3764;
+// $hover: #4d7ecc;
+// $accent: #FFCA42;
+// $text-color: #B4C7E7;
+// $textwhite: #F6F8FC;
+// $textgray: #969AA0;
 
-%btn {
-   @extend %cardo-400;
-   background-color: $accent;
-   font-size: 19px;
-   line-height: 28px;
-   letter-spacing: 0.57px;
-   text-transform: capitalize;
-   color: $default;
-   border: none;
-   cursor: pointer;
-   transition: all .2s;
+// %btn {
+//    @extend %cardo-400;
+//    background-color: $accent;
+//    font-size: 19px;
+//    line-height: 28px;
+//    letter-spacing: 0.57px;
+//    text-transform: capitalize;
+//    color: $default;
+//    border: none;
+//    cursor: pointer;
+//    transition: all .2s;
 
-   &:hover {
-      color: $accent;
-      background-color: $hover;
-   }
+//    &:hover {
+//       color: $accent;
+//       background-color: $hover;
+//    }
+// }
+%SharpSansDispNo1-500 {
+   font-family: 'SharpSansDispNo1-Medium', sans-serif;
+   font-weight: 500;
 }
-
-%cardo-400 {
-   font-family: 'Cardo-Regular', sans-serif;
+%SharpSansDispNo1-Book {
+   font-family: 'SharpSansDispNo1-Book', sans-serif;
+   font-weight: 750;
+}
+%SofiaSans-400 {
+   font-family: 'SofiaSans-Regular', sans-serif;
    font-weight: 400;
 }
-
-%inter-400 {
-   font-family: 'Inter-Regular', sans-serif;
-   font-weight: 400;
+%SharpSansDispNo1-700 {
+   font-family: 'SofiaSans-Regular', sans-serif;
+   font-weight: 700;
+}
+%SofiaSans-500 {
+   font-family: 'SofiaSans-Medium', sans-serif;
+   font-weight: 500;
+}
+%SharpSansDispNo1-600 {
+   font-family: 'SharpSansDispNo1-Semibold', sans-serif;
+   font-weight: 600;
 }

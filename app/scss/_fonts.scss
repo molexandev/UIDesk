@@ -1,18 +1,54 @@
 @font-face {
-   font-family: 'Cardo-Regular';
-   font-weight: 400;
+   font-family: 'SharpSansDispNo1-Bold';
+   font-weight: 700;
    font-style: normal;
-   src: local('Cardo-Regular'),
-   url('../fonts/Cardo-Regular.woff2') format('woff2'),
-   url('../fonts/Cardo-Regular.woff') format('woff');
+   src: local('SharpSansDispNo1-Bold'),
+   url('../fonts/SharpSansDispNo1-Bold.woff2') format('woff2'),
+   url('../fonts/SharpSansDispNo1-Bold.woff') format('woff');
    font-display: swap;      
 }
 @font-face {
-   font-family: 'Inter-Regular';
+   font-family: 'SharpSansDispNo1-Book';
+   font-weight: 750;
+   font-style: normal;
+   src: local('SharpSansDispNo1-Book'),
+   url('../fonts/SharpSansDispNo1-Book.woff2') format('woff2'),
+   url('../fonts/SharpSansDispNo1-Book.woff') format('woff');
+   font-display: swap;      
+}
+@font-face {
+   font-family: 'SharpSansDispNo1-Medium';
+   font-weight: 500;
+   font-style: normal;
+   src: local('SharpSansDispNo1-Medium'),
+   url('../fonts/SharpSansDispNo1-Medium.woff2') format('woff2'),
+   url('../fonts/SharpSansDispNo1-Medium.woff') format('woff');
+   font-display: swap;      
+}
+@font-face {
+   font-family: 'SharpSansDispNo1-Semibold';
+   font-weight: 600;
+   font-style: normal;
+   src: local('SharpSansDispNo1-Semibold'),
+   url('../fonts/SharpSansDispNo1-Semibold.woff2') format('woff2'),
+   url('../fonts/SharpSansDispNo1-Semibold.woff') format('woff');
+   font-display: swap;      
+}
+@font-face {
+   font-family: 'SofiaSans-Medium';
+   font-weight: 500;
+   font-style: normal;
+   src: local('SofiaSans-Medium'),
+   url('../fonts/SofiaSans-Medium.woff2') format('woff2'),
+   url('../fonts/SofiaSans-Medium.woff') format('woff');
+   font-display: swap;      
+}
+@font-face {
+   font-family: 'SofiaSans-Regular';
    font-weight: 400;
    font-style: normal;
-   src: local('Inter-Regular'),
-   url('../fonts/Inter-Regular.woff2') format('woff2'),
-   url('../fonts/Inter-Regular.woff') format('woff');
+   src: local('SofiaSans-Regular'),
+   url('../fonts/SofiaSans-Regular.woff2') format('woff2'),
+   url('../fonts/SofiaSans-Regular.woff') format('woff');
    font-display: swap;      
 }
