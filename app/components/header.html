@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,48 @@
 </head>
 <body>
    <div class="wrapper">
-   <header class="header">
-      
-   </header>
+      <header class="header">
+         <div class="container">
+            <div class="header__wrapper">
+               <div class="header__left">
+                  <a href="#" class="header__logo">
+                     <svg class="header__logo-svg">
+                        <use xlink:href="images/sprite.svg#logo" width="94" height="39"></use>
+                     </svg>
+                  </a>
+                  <nav class="menu">
+                     <ul class="menu__list">
+                        <li class="menu__item">
+                           <a class="menu__link" href="#">Home</a>
+                        </li>
+                        <li class="menu__item">
+                           <a class="menu__link" href="#">About</a>
+                        </li>
+                        <li class="menu__item">
+                           <a class="menu__link" href="#">Contact</a>
+                        </li>
+                        <li class="menu__item">
+                           <a class="menu__link" href="#">Testimonials</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="header__right">
+                  <div class="user-nav">
+                     <a class="user-nav__link" href="#">
+                        <svg class="user-nav__svg">
+                           <use xlink:href="images/sprite.svg#search" width="20" height="20"></use>
+                        </svg>
+                     </a>
+                     <a class="user-nav__link" href="#">
+                        <svg class="user-nav__cart-svg">
+                           <use xlink:href="images/sprite.svg#shoping-cart" width="25" height="20"></use>
+                        </svg>
+                        <span class=" user-nav__link--circle">0</span>
+                     </a>
+                  </div>
+                  <button class="user-nav__btn" type="submit">Order Now</button>
+               </div>
+            </div>
+         </div>
+      </header>

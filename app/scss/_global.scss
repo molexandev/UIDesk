@@ -1,6 +1,7 @@
 body {
    height: 100vh;
    @extend %SharpSansDispNo1-600;
+   color: #181D19;
 }
 /* =============================*/
 .lock{
@@ -11,6 +12,12 @@ body {
    // overflow: clip;
    display: flex;
    flex-direction: column;
+}
+.title{
+   color: #151414;
+   @extend %SharpSansDispNo1-600;
+   font-size: 54px;
+   font-weight: 770;
 }
 .main{
    flex: 1 1 auto;

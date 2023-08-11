@@ -1,27 +1,23 @@
-// $default: #1B3764;
-// $hover: #4d7ecc;
-// $accent: #FFCA42;
-// $text-color: #B4C7E7;
-// $textwhite: #F6F8FC;
-// $textgray: #969AA0;
+$default: #64BB47;
+$hover: #5FB848;
 
-// %btn {
-//    @extend %cardo-400;
-//    background-color: $accent;
-//    font-size: 19px;
-//    line-height: 28px;
-//    letter-spacing: 0.57px;
-//    text-transform: capitalize;
-//    color: $default;
-//    border: none;
-//    cursor: pointer;
-//    transition: all .2s;
-
-//    &:hover {
-//       color: $accent;
-//       background-color: $hover;
-//    }
-// }
+%btn {
+   @extend %SofiaSans-400;
+   width: 160px;
+   height: 54px;
+   font-size: 20px;
+   text-align: center;
+   border-radius: 50px;
+   color: #fff;
+   background: linear-gradient(180deg, #64BB47 0%, #2C9553 100%);
+   border: none;
+   cursor: pointer;
+   transition: all .2s;
+   &:hover {
+      color: #111;
+      background:linear-gradient(180deg, #E98A2C 0%, #DC6222 100%);
+   }
+}
 %SharpSansDispNo1-500 {
    font-family: 'SharpSansDispNo1-Medium', sans-serif;
    font-weight: 500;
@@ -35,7 +31,7 @@
    font-weight: 400;
 }
 %SharpSansDispNo1-700 {
-   font-family: 'SofiaSans-Regular', sans-serif;
+   font-family: 'SofiaSans-Bold', sans-serif;
    font-weight: 700;
 }
 %SofiaSans-500 {
