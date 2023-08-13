@@ -6,12 +6,20 @@
 
 //   =======   HEADER   =======
 .header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   padding: 20px 0;
+   background-color: #BEDA74;
+   z-index: 100;
    &__wrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-top: 40px;
+      // padding-top: 40px;
       margin: 0 70px;
+
    }
    &__left{
       display: flex;
@@ -47,6 +55,9 @@
       &:hover{
          color: $hover;
       }
+   }
+   &__btn{
+      display: none;
    }
 }
 .user-nav {
@@ -100,6 +111,7 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 130px;
+      padding-top: 94px;
    }
    &__info {
       max-width: 596px;
@@ -481,32 +493,6 @@
    }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //   =======   FOOTER   =======
 .footer-top {
    background-color: #FCFCFC;
@@ -545,7 +531,11 @@
       @extend %SharpSansDispNo1-700;
       font-size: 22px;
       margin-bottom: 20px;
+      pointer-events: none;
 	}
+   &__list{
+      display: block;
+   }
 	&__item {
       margin-bottom: 12px;
 	}
