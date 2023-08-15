@@ -6,10 +6,18 @@ $(function () {
         arrows: true,
         speed: 1000,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 2000,        
         slidesToScroll: 1,
-        slidesToShow: 2,
+        slidesToShow: 2,        
         draggable: true,
+        responsive: [
+            {
+              breakpoint: 650,
+              settings: {
+                slidesToShow: 1,
+              }
+            }
+        ]
     });
 
     // MOBILE MENU
@@ -26,4 +34,18 @@ $(function () {
         $(this).toggleClass("footer-top__title--active");
         $(this).next().slideToggle();
     });
+
+    // ANIMATION
+
+    wow = new WOW(
+        {
+        boxClass:     'wow',
+        animateClass: 'animate__animated',
+        offset:       0,
+        mobile:       true,
+        live:         true
+      }
+      )
+      wow.init();
+
 });

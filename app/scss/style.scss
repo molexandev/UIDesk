@@ -10,14 +10,13 @@
    top: 0;
    left: 0;
    right: 0;
-   padding: 20px 0;
+   padding: 10px 0;
    background-color: #BEDA74;
    z-index: 100;
    &__wrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      // padding-top: 40px;
       margin: 0 70px;
 
    }
@@ -111,7 +110,7 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 130px;
-      padding-top: 94px;
+      padding-top: 74px;
    }
    &__info {
       max-width: 596px;
@@ -121,6 +120,7 @@
       font-size: 76px;
       @extend %SharpSansDispNo1-600;
       margin-bottom: 30px;
+      animation-duration: 1.5s;
    }
    &__title-dekor {
       color: #5FB848;
@@ -129,12 +129,15 @@
       @extend %SharpSansDispNo1-Book;
       font-size: 24px;
       margin-bottom: 50px;
+      animation-delay: .4s;
    }
    &__btn {
       @extend %btn;
+      animation-delay: .8s;
    }
    &__img-box {
       position: relative;
+      animation-delay: 1s;
       &::after{
          content: '';
          position: absolute;
@@ -145,6 +148,11 @@
          right: 5px;
          z-index: -100;
       }
+   }
+   &__img{
+      transition: all .2s;
+      animation-delay: .7s;
+      animation-duration: 1.5s;
    }
 }
 
@@ -160,6 +168,7 @@
       font-size: 24px;
       @extend %SharpSansDispNo1-500;
       margin-bottom: 60px;
+      animation-delay: .4s;
    }
    &__items {
       display: flex;
@@ -170,6 +179,7 @@
    &__item {
       text-align: center;
       max-width: 270px;
+      animation-delay: .8s;
    }
    &__img-box {
       margin-bottom: 35px;
@@ -192,6 +202,9 @@
       justify-content: center;
       column-gap: 150px;
       margin-bottom: 170px;
+   }
+   &__numbers-item{
+      animation-delay: 1.2s;
    }
    &__numbers-amount {
       color: #000;
@@ -227,15 +240,18 @@
       line-height: 34px;
       @extend %SharpSansDispNo1-500;
       margin-bottom: 68px;
+      animation-delay: .4s;
    }
    &__btn {
       @extend %btn;
+      animation-delay: .8s;
    }
    &__images {
       column-count: 2;
       gap: 20px;
    }
    &__img {
+      animation-delay: .8s;
       margin-bottom: 20px;
       position: relative;
       top: -50px;
@@ -252,7 +268,7 @@
       justify-content: center;
       align-items: center;
       column-gap: 70px;
-      margin-bottom: 60px;
+      margin-bottom: 160px;
    }
    &__info {
       max-width: 514px;
@@ -265,9 +281,14 @@
       font-size: 22px;
       @extend %SharpSansDispNo1-500;
       line-height: 34px;
+      animation-delay: .4s
    }
    &__btn {
       @extend %btn;
+      animation-delay: .8s;
+   }
+   &__img{
+      animation-delay: .8s;
    }
 }
 
@@ -292,12 +313,14 @@
       font-size: 22px;
       line-height: 34px;
       margin-bottom: 30px;
+      animation-delay: .4s;
    }
    &__item {
       margin-bottom: 20px;
       @extend %SharpSansDispNo1-500;
       padding-left: 37px;
       position: relative;
+      animation-delay: .8s;
       &::before{
          content: '';
          position: absolute;
@@ -309,6 +332,7 @@
    }
    &__img-box {
       position: relative;
+      animation-delay: .8s;
       &::after{
          content: '';
          position: absolute;
@@ -338,6 +362,7 @@
       font-size: 24px;
       @extend %SharpSansDispNo1-500;
       margin-bottom: 110px;
+      animation-delay: .4s;
    }
    &__items {
       display: flex;
@@ -345,6 +370,7 @@
       column-gap: 50px
    }
    &__item {
+      animation-delay: .8s;
       padding: 50px 30px;
       margin-bottom: 60px;
       max-width: 356px;
@@ -354,6 +380,7 @@
       transition: all .2s;
       &:hover{
        box-shadow: 10px 20px 70px 0px rgba(71, 68, 68, 0.08), -15px -50px 81px 0px #FFF;
+       color: $hover;
       }
    }
    &__img-box {
@@ -374,6 +401,7 @@
    }
    &__btn {
       @extend %btn;
+      animation-delay: 1.2s;
    }
 }
 
@@ -470,7 +498,11 @@
       font-size: 24px;
       @extend %SharpSansDispNo1-500;
       margin-bottom: 60px;
+      animation-delay: .4s;
 
+   }
+   &__form{
+      animation-delay: .8s;
    }
    &__inp {
       margin-right: 15px;
