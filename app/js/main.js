@@ -50,11 +50,40 @@ $(function () {
 
       // SLOW sCROLL
 
-      $("#menu").on("click", "a", function (e) {
+    //   $("#menu").on("click", "a", function (e) {
+    //     e.preventDefault();
+    //     var id = $(this).attr("href"),
+    //         top = $(id).offset().top;
+    //     $("body, html").animate({ scrollTop: top }, 1500);
+    // });
+
+
+    // $("#menu").on("click", "a", function (e) {
+    //     e.preventDefault();
+    //     var id = $(this).attr("href"),
+    //         target = $(id),
+    //         headerHeight = $("#header").outerHeight(); // Замініть "#header" на ідентифікатор вашої шапки
+    
+    //     if (target.length) {
+    //         var top = target.offset().top - headerHeight;
+    //         $("body, html").animate({ scrollTop: top }, 1500);
+    //     }
+    // });
+
+    $("#menu").on("click", "a", function (e) {
         e.preventDefault();
         var id = $(this).attr("href"),
-            top = $(id).offset().top;
-        $("body, html").animate({ scrollTop: top }, 1500);
+            target = $(id),
+            header = $("#header"), // Замініть на відповідний селектор
+            headerHeight = header.outerHeight(),
+            offset = 50; // Замініть це на бажану величину в пікселях
+    
+        if (target.length) {
+            var top = target.offset().top - headerHeight - offset;
+            $("body, html").animate({ scrollTop: top }, 1500);
+        }
     });
+    
+    
 
 });
