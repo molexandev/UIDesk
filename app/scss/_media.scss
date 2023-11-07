@@ -350,6 +350,7 @@
    .cooked-by{
       &__wrapper{
          position: relative;
+         margin-bottom: 70px;
       }
       &__info{
          max-width: 100%;
@@ -360,7 +361,10 @@
       &__img-box{
          position: absolute;
          z-index: -100;
-         opacity: .5;
+      }
+      &__img{
+         opacity: 0.5;
+
       }
    }
    .especially-for-you{
